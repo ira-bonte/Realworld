@@ -1,42 +1,25 @@
 import React from 'react'
-// icons
-import { BsHouse } from 'react-icons/bs'
-import { FaHome } from 'react-icons/fa'
-// images
-import logo from '../assets/img/png/logo.png'
-import { NavLink } from 'react-router-dom'
+
+import logo1 from '../assets/img/png/logo-no-background.png'
+import {BsFacebook,BsTwitter,BsInstagram,BsSearch} from 'react-icons/bs'
 const Navbar = () => {
   return (
-    <nav className=' p-2 flex bg-white justify-between '>
-      <a href="./">
-        <img src={logo} alt=" real word logo" className=' h-8' />
-      </a>
-      <ul className=' flex gap-2'>
-       <li>
-          <a href='./' className=' flex gap-2 font-bold text-2xl text-orange-950  cursor-pointer '>
-            <FaHome className = "text-3xl "/>
-            Home
+    <nav className='flex gap-48 bg-gray-50 text-black h-16 w-full fixed z-10 p-2'>
+          <img src={logo1} alt="" className='h-12  '/>
+        <ul className='flex gap-16 p-3 text-black text-xl'>
+          <li>Blog</li>
+          <li>Single post</li>
+          <li>Categories</li>
+          </ul>
+          {/* media */}
+        <div className='flex gap-8 p-3 text-2xl '>
+          <a href="./">
+            <BsFacebook/>
           </a>
-       </li>
-       <li>
-          <a href='./' className=' flex gap-2 font-bold text-2xl text-orange-950  cursor-pointer '>
-            <FaHome className = "text-3xl "/>
-            Home
-          </a>
-       </li>
-       <li>
-          <a href='./' className=' flex gap-2 font-bold text-2xl text-orange-950  cursor-pointer '>
-            <FaHome className = "text-3xl "/>
-            Home
-          </a>
-       </li>
-       <li>
-          <a href='./' className=' flex gap-2 font-bold text-2xl text-orange-950  cursor-pointer '>
-            <FaHome className = "text-3xl "/>
-            Home
-          </a>
-       </li>
-      </ul>
+          <BsTwitter/>
+          <BsInstagram/>
+          <BsSearch/>
+        </div>
     </nav>
   )
 }
