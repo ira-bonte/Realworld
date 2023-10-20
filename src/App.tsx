@@ -3,9 +3,9 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div>App
+    <section className=' bg-gray-100'>
       <Navbar/>
-    </div>
+    </section>
   )
 }
 
