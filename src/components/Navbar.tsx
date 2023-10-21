@@ -11,6 +11,7 @@ const Navbar = () => {
           <li>Blog</li>
           <li>Single post</li>
           <li>Categories</li>
+          
           </ul>
           {/* media */}
         <div className='flex gap-8 p-3 text-2xl '>
