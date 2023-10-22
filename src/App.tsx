@@ -1,10 +1,13 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import { BsHouse } from 'react-icons/bs';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 const App = () => {
   return (
-    <div>App
+    <div>
       <Navbar/>
+      <Header/>
     </div>
   )
 }
