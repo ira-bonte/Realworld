@@ -1,6 +1,6 @@
 import React from 'react'
 import Image1 from '../../assets/img/png/logo-white.png'
-
+import bbc from '../../assets/img/news/bbc-2.PNG'
 const topnews = () => {
   return (
     //the top News
