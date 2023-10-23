@@ -1,9 +1,9 @@
-import React from 'react'
-import Image1 from '../../assets/img/png/logo-white.png'
-import Igihe1 from '../../assets/img/news/pexels-алесь-усцінаў-11518767.jpg'
+import React from 'react';
+import Image1 from '../../assets/img/png/logo-white.png';
+import Igihe1 from '../../assets/img/news/bomb.jpg'
 import bbcNews from '../../assets/img/news/pexels-алесь-усцінаў-11477799.jpg'
 import Igihe2 from '../../assets/img/news/pexels-алесь-усцінаў-11734710.jpg'
-import Igihe3 from '../../assets/img/news/pexels-алесь-усцінаў-11678923.jpg'
+
 const topnews = () => {
   return ( 
     //the top News
@@ -11,7 +11,7 @@ const topnews = () => {
         {/* part1 */}
         <div className='mt-10 border-r pr-9'>
             <a href="#">
-            <img src={Igihe1} alt="img1" className='h-52 w-80 ' />
+            <img src={Igihe1} alt="img1" className='h-52 w-80 object-cover' />
             </a>
             <div className='mt-7'>
       <small>CULTURE • JUL 5TH '22</small>
@@ -37,7 +37,7 @@ const topnews = () => {
         
       </div>
       <div className='mt-5 flex gap-4'>
-        <img src={Igihe2} alt="" className='h-7 w-7 rounded-full' />
+        <img src={Igihe2} alt="" className='h-7 w-7 rounded-full object-cover' />
         <p>Cameron Williamson</p>
       </div>
       </div>
@@ -45,7 +45,7 @@ const topnews = () => {
       <div className=' border-r pr-5 '>
         {/* 1 */}
         <a href="#">
-      <img src={Igihe2} alt="img2" className='w-52 h-40 mt-7' />
+      <img src={Igihe2} alt="img2" className='object-cover w-52 h-40 mt-7' />
       </a>
       <div className='mt-5'>
       <small>SPORT • JUL 5TH '22</small>
