@@ -9,7 +9,7 @@ const topnews = () => {
     //the top News
     <div className='p-20 flex gap-16'>
         {/* part1 */}
-        <div className='mt-10 border-r pr-9'>
+        <div className='mt-10 '>
             <a href="#">
             <img src={Igihe1} alt="img1" className='h-52 w-80 ' />
             </a>
@@ -42,7 +42,7 @@ const topnews = () => {
       </div>
       </div>
       {/* part2 */}
-      <div className=' border-r pr-5 '>
+      <div className=' border-x pr-10 pl-10 '>
         {/* 1 */}
         <a href="#">
       <img src={Igihe2} alt="img2" className='w-52 h-40 mt-7' />
