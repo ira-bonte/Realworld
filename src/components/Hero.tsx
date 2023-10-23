@@ -25,7 +25,7 @@ const Hero = () => {
         sliderRef.current.slickNext();
       };
   return (
-    <div className= " relative pt-20 p-2">
+    <div className= " relative pt-20 px-2">
       <Slider ref={sliderRef} {...settings}>
         <BbcNews/>
       </Slider>

@@ -3,7 +3,7 @@ import bbcNewOne from '../../assets/img/news/bbcNews-1.jpg'
 
 const BbcNews = () => {
   const className = {
-    imgContainer: "h-[85hv] w-[12hv] relative",
+    imgContainer: "h-[8hv] w-[12hv] relative",
     img: "h-full w-full object-cover cursor-pointer rounded-md",
     
   }

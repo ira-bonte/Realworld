@@ -5,12 +5,12 @@ import Footer from './components/footer'
 import Hero  from './components/Hero'
 const App = () => {
   return (
-    <div>
+    <section className=' bg-gray-100'>
       <Navbar/>
       <Hero/>
       <Topnews/>
       <Footer/>
-    </div>
+    </section>
   )
 }
 
