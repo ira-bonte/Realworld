@@ -1,8 +1,8 @@
 import React from 'react'
 import Image1 from '../../assets/img/png/logo-white.png'
-
+import bbcNews from '../../assets/img/news/pexels-алесь-усцінаў-11477799.jpg'
 const topnews = () => {
-  return (
+  return ( 
     //the top News
     <div className='p-20 flex gap-16'>
         {/* part1 */}
@@ -60,7 +60,7 @@ const topnews = () => {
       </div>
       {/* 2 */}
       <a href="#">
-      <img src={Image1} alt="img3"  className='w-52 h-40 mt-7'/>
+      <img src={bbcNews} alt="img3"  className='w-52 h-40 mt-7'/>
       </a>
       <div className='mt-5'>
       <small>FOOD • JUL 17TH '22</small>
@@ -68,16 +68,15 @@ const topnews = () => {
       <div className='mt-5 text-10 font-serif'>
       <a href="#">
         <h1>
-        How to Avoid Distraction <br />
-         and Stay Focused During <br />
-          Video Calls?
+        Israel says it will increase Gaza strikes,<br/> 
+        telling more people to flee south
 
         </h1>
       </a>
       </div>
       {/* 3 */}
       <a href="">
-      <img src={Image1} alt="img4" className='w-52 h-40 mt-7'/>
+      <img src={bbcNews} alt="img4" className='w-52 h-40 mt-7'/>
       </a>
       <div className='mt-5'>
       <small>DESIGN • MAR 15TH '22</small>
@@ -113,7 +112,7 @@ const topnews = () => {
       </div>
       {/* 2 */}
       <a href="#">
-      <img src={Image1} alt="img6" className='w-52 h-40 mt-7'/>
+      <img src={bbcNews} alt="img6" className='w-52 h-40 mt-7'/>
       </a>
       <div className='mt-5'>
       <small>TECH • MAR 1ST '22</small>
@@ -129,7 +128,7 @@ const topnews = () => {
       </div>
       {/* 3 */}
       <a href="#">
-      <img src={Image1} alt="img7" className='w-52 h-40 mt-7'/>
+      <img src={bbcNews} alt="img7" className='w-52 h-40 mt-7'/>
       </a>
       <div className='mt-5'>
       <small>TRAVEL • JUL 5TH '22</small>
