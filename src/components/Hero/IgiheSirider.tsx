@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment'; // Import the date/time library
+// import moment from 'moment'; // Import the date/time library
+// images
 import bbcNewsSliderOne from '../../assets/img/news/bbcNews-1.jpg'
+import IgiheLogo from '../../assets/img/logo/igihe-logo copy.png'
 import bbcLogo from '../../assets/img/logo/bbc-logo.png'
 import { formatDistanceToNow } from 'date-fns';
 //time ago
@@ -19,25 +21,8 @@ function TimeAgo({ date }) {
 
   return <span>{relativeTime} ago</span>;
 }
-
-////////////////////////////////
 const BbcNews = () => {
-  /////
-  const someDate = new Date('2023-10-24T10:00:00Z'); // Replace with your date
-
-  // const [currentDateTime, setCurrentDateTime] = useState('');
-
-  // useEffect(() => {
-  //   // Set up a timer to update the date and time every second
-  //   const intervalId = setInterval(() => {
-  //     const now = moment(); // Create a moment object representing the current date and time
-  //     setCurrentDateTime(now.format('YYYY-MM-DD HH:mm:ss')); // Format the date and time as desired
-  //   }, 1000);
-
-  //   // Clean up the timer when the component unmounts
-  //   return () => clearInterval(intervalId);
-  // }, []);
-  
+  const someDate = new Date('2023-10-25T12:50:00Z'); // Replace with your date
   return (
     <div>
       <a href="./" className=' h-[450px] w-[990px]'>
@@ -45,7 +30,7 @@ const BbcNews = () => {
         <div className=' h-[450px] w-[990px] dark-background rounded-md -mt-[450px] absolute z-10 '></div>
         <div className=' -mt-56 absolute z-20 p-2'>
           <h1 className=' text-4xl text-red-500 font-bold'>
-            Ukraine Shool Down
+            Byadogereye muri kivu zo mbi
           </h1>
           <p className=' text-white w-96'>
             Lorem ipsum dolor sit, amet consectetur
@@ -53,9 +38,9 @@ const BbcNews = () => {
             inventore pariatur numquam cumque possimus
           </p>
           <div className=' absolute z-40 flex mt-7'>
-            <img src={bbcLogo} alt=" bbc logo" className=' h-16' />
+            <img src={IgiheLogo} alt=" bbc logo" className=' h-16' />
             <div className=' flex flex-col mt-2 '>
-              <span className=' text-white '>BBC NEWS</span>
+              <span className=' text-white '>Igihe News</span>
               {/* <span className='  text-gray-300'><p>{currentDateTime}</p></span> */}
               <p className='  text-gray-300'>Posted <TimeAgo date={someDate} />.</p>
             </div>
