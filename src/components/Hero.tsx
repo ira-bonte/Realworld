@@ -1,9 +1,12 @@
-import React, { useRef } from 'react'
+import React, { SetStateAction, useRef, useState } from 'react'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
+// pages
 import IgiheSirider from './Hero/IgiheSirider'
 import BbcNews from './Hero/BbcNews'
+import Trending  from './Hero/Trending'
+import Videos from './Hero/Videos'
 // icons
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import Popular from './Hero/Popular'
@@ -29,6 +32,11 @@ const Hero = () => {
       const goToNextSlide = () => {
         sliderRef.current.slickNext();
       };
+      // trending news slide
+      const [change, setChange] = useState(Popular);
+      const toggleChange = (newChange:SetStateAction<string> ) => {
+        setChange(newChange);
+      }
   return (
     <section className= " relative pt-20 px-2 flex">
       <div  className=' h-[450px] w-[990px]'>
@@ -50,21 +58,35 @@ const Hero = () => {
         </div>
       </div>
      {/* other news */}
-     <div className='px-2'>
+     <div className='px-2 max-lg:hidden'>
       {/* categories of Popular*/}
       <div className=' flex gap-4'>
-        <button className=' font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 border-amber-600'>
+        {/* popular */}
+        <button 
+         className=' font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 border-amber-600'
+         onClick={() => toggleChange(Popular)}
+         >
           Popular
         </button>
-        <button className=' font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 border-amber-600'>
+        {/* trending */}
+        <button 
+         className=' font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 border-amber-600'
+         onClick={() => toggleChange(Trending)}
+         >
           Trending
         </button>
-        <button className=' font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 border-amber-600'>
+        <button
+         className=' font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 border-amber-600 text-2xl'
+         onClick={() => toggleChange(Videos)}
+         >
           Videos
         </button>
       </div>
-      <Popular/>
-
+      {/* where it shown */}
+      <div className=' pt-2'>
+        {change}
+        {/* <Popular/> */}
+      </div>
      </div>
     </section>
   )

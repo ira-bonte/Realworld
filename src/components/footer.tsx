@@ -1,8 +1,9 @@
 import React from 'react'
 import {BsFacebook,BsTwitter,BsInstagram,BsSearch,} from 'react-icons/bs'
 import {FaChevronRight} from 'react-icons/Fa'
+import { NavLink } from 'react-router-dom'
 
-const footer = () => {
+const ooter = () => {
   return (
     <div>
         
@@ -42,7 +43,7 @@ const footer = () => {
               <h1>Navigation</h1>
               <div className=' opacity-70 mt-3 p-2'>
                 <ul>
-               <li className=' flex hover:text-gray-950'><FaChevronRight/><a href="#">Home</a></li> 
+               <li className=' flex hover:text-gray-950'><FaChevronRight/><NavLink to="Food">Home</NavLink></li> 
                <li className=' flex hover:text-gray-950'><FaChevronRight/><a href="#">Blog</a></li> 
                <li className=' flex hover:text-gray-950'><FaChevronRight/><a href="#"> Categories</a></li> 
                <li className=' flex hover:text-gray-950'><FaChevronRight/><a href="#">Single Post</a></li> 
@@ -57,7 +58,7 @@ const footer = () => {
                 <h1>© Copyright Realworld. All Rights Reserved</h1>
             </div>
             <div className='flex gap-8'>
-            <a href="./">
+            <a href="#">
             <BsFacebook/>
           </a>
           <a href="#">
@@ -77,4 +78,4 @@ const footer = () => {
 }
 
 
-export default footer
+export default ooter

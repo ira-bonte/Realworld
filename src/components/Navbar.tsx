@@ -3,6 +3,7 @@ import logo1 from '../assets/img/png/logo-no-background.png';
 import {BsFacebook,BsTwitter,BsInstagram,BsSearch} from 'react-icons/bs';
 import { FaHome, FaMicrophone } from "react-icons/fa"
 import Search from './navBar/Search';
+import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   const className= {
     nav: " h-16 z-50 fixed p-2 shadow-md shadow-orange-900 w-full  flex justify-between bg-white",
@@ -15,9 +16,9 @@ const Navbar = () => {
     <nav className={className.nav}>
       {/* logo */}
       <div>
-        <a href="./">
+        <NavLink to="/">
           <img src={logo1} alt=" Real word Logo" className=' h-12' />
-        </a>
+        </NavLink>
       </div>
       {/* list */}
       <ul className={className.uList}>

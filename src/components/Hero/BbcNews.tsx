@@ -3,6 +3,7 @@ import moment from 'moment'; // Import the date/time library
 import bbcNewsSliderOne from '../../assets/img/news/bbcNews-1.jpg'
 import bbcLogo from '../../assets/img/logo/bbc-logo.png'
 import { formatDistanceToNow } from 'date-fns';
+import { NavLink } from 'react-router-dom';
 //time ago
 function TimeAgo({ date }) {
   const [relativeTime, setRelativeTime] = useState(formatDistanceToNow(new Date(date)));
@@ -23,7 +24,7 @@ function TimeAgo({ date }) {
 ////////////////////////////////
 const BbcNews = () => {
   /////
-  const someDate = new Date('2023-10-24T10:00:00Z'); // Replace with your date
+  const someDate = new Date('2023-10-24T15:00:00Z'); // Replace with your date
 
   // const [currentDateTime, setCurrentDateTime] = useState('');
 
@@ -40,7 +41,7 @@ const BbcNews = () => {
   
   return (
     <div>
-      <a href="./" className=' h-[450px] w-[990px]'>
+      <NavLink to='culture' className=' h-[450px] w-[990px]'>
         <img src={bbcNewsSliderOne} alt="Ukraine hoes " className=' h-[450px] w-[990px] object-cover rounded-md relative group' />
         <div className=' h-[450px] w-[990px] dark-background rounded-md -mt-[450px] absolute z-10 '></div>
         <div className=' -mt-56 absolute z-20 p-2'>
@@ -61,7 +62,7 @@ const BbcNews = () => {
             </div>
           </div>
         </div>
-      </a>
+      </NavLink>
     </div>
   )
 }
