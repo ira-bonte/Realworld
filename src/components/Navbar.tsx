@@ -20,8 +20,8 @@ const Navbar = () => {
           </ul>
           {/* media */}
         <div className='flex gap-8 p-3 text-2xl '>
-          <a href='https://www.facebook.com'><BsFacebook/></a>
-          <a href='https://www.linkedin.com'><BsLinkedin/></a>
+          <a href='https://www.facebook.com'target='blank'><BsFacebook/></a>
+          <a href='https://www.linkedin.com' target='blank'><BsLinkedin/></a>
           <a href='https://www.instagram.com' target='blank'><BsInstagram/></a>
           <a href=''><BsSearch/></a>
         </div>

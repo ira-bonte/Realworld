@@ -1,17 +1,21 @@
 import React from 'react';
-import Image1 from '../../assets/img/png/logo-white.png';
+import Image1 from '../../assets/img/news/firefighters.jpg';
 import Igihe1 from '../../assets/img/news/bomb.jpg'
 import bbcNews from '../../assets/img/news/pexels-алесь-усцінаў-11477799.jpg'
 import Igihe2 from '../../assets/img/news/pexels-алесь-усцінаў-11734710.jpg'
+import Image2 from '../../assets/img/news/tornado.jpg'
+import Image3 from '../../assets/img/news/soldiers.jpg'
+import pic from '../../assets/img/png/logo-white.png'
+import image from '../../assets/img/news/Car accident.jpg'
 
 const topnews = () => {
   return ( 
     //the top News
     <div className='p-20 flex gap-16'>
         {/* part1 */}
-        <div className='mt-10 border-r pr-9'>
+        <div className='mt-10 '>
             <a href="#">
-            <img src={Igihe1} alt="img1" className='h-52 w-80 object-cover' />
+            <img src={Image1} alt="img1" className='h-52 w-80 object-cover' />
             </a>
             <div className='mt-7'>
       <small>CULTURE • JUL 5TH '22</small>
@@ -37,12 +41,12 @@ const topnews = () => {
         
       </div>
       <div className='mt-5 flex gap-4'>
-        <img src={Igihe2} alt="" className='h-7 w-7 rounded-full object-cover' />
+        <img src={pic} alt="" className='h-7 w-7 rounded-full object-cover' />
         <p>Cameron Williamson</p>
       </div>
       </div>
       {/* part2 */}
-      <div className=' border-r pr-5 '>
+      <div className=' border-x pr-10 pl-10 '>
         {/* 1 */}
         <a href="#">
       <img src={Igihe2} alt="img2" className='object-cover w-52 h-40 mt-7' />
@@ -60,7 +64,7 @@ const topnews = () => {
       </div>
       {/* 2 */}
       <a href="#">
-      <img src={bbcNews} alt="img3"  className='w-52 h-40 mt-7'/>
+      <img src={Image3} alt="img3" className='w-52 h-40 mt-7 object-cover'/>
       </a>
       <div className='mt-5'>
       <small>FOOD • JUL 17TH '22</small>
@@ -68,15 +72,13 @@ const topnews = () => {
       <div className='mt-5 text-10 font-serif'>
       <a href="#">
         <h1>
-        Israel says it will increase Gaza strikes,<br/> 
-        telling more people to flee south
-
+        Brave Soldiers Defend Homeland <br/>Against Enemy Forces
         </h1>
       </a>
       </div>
       {/* 3 */}
       <a href="">
-      <img src={bbcNews} alt="img4" className='w-52 h-40 mt-7'/>
+      <img src={image} alt="img4" className=' object-cover w-52 h-40 mt-7'/>
       </a>
       <div className='mt-5'>
       <small>DESIGN • MAR 15TH '22</small>
@@ -96,7 +98,7 @@ const topnews = () => {
       <div >
         {/* 1 */}
         <a href="#">
-      <img src={Igihe1} alt="img5" className='w-52 h-40 mt-7'/>
+      <img src={Igihe1} alt="img5" className='w-52 h-40 mt-7 object-cover'/>
       </a>
       <div className='mt-5'>
       <small>BUSINESS • JUL 5TH '22</small>
@@ -112,7 +114,7 @@ const topnews = () => {
       </div>
       {/* 2 */}
       <a href="#">
-      <img src={bbcNews} alt="img6" className='w-52 h-40 mt-7'/>
+      <img src={bbcNews} alt="img6" className='w-52 h-40 mt-7 object-cover'/>
       </a>
       <div className='mt-5'>
       <small>TECH • MAR 1ST '22</small>
@@ -128,7 +130,7 @@ const topnews = () => {
       </div>
       {/* 3 */}
       <a href="#">
-      <img src={Igihe1} alt="img7" className='w-52 h-40 mt-7'/>
+      <img src={Image2} alt="img7" className='w-52 h-40 mt-7 object-cover'/>
       </a>
       <div className='mt-5'>
       <small>TRAVEL • JUL 5TH '22</small>
@@ -136,8 +138,8 @@ const topnews = () => {
       <div className='mt-5 text-10 font-serif'>
       <a href="#">
         <h1>
-        5 Great Startup Tips for <br />
-         Female Founders
+        Earthquake Shakes Neighborhood, <br/>
+        Causes Structural Damage
         </h1>
       </a>
       </div>
