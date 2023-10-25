@@ -10,8 +10,9 @@ const Navbar = () => {
     nav: " h-16 z-50 fixed p-2 shadow-md shadow-orange-900 w-full  flex justify-between bg-white",
     navIcons : " text-3xl text-amber-950  cursor-pointer group-hover:text-amber-950 duration-500 hover:scale-105 hover:text-amber-600",
     navLink: " flex gap-2 group  hover:border-amber-950",
-    span:" text-2xl  font-semibold text-amber-800   group-hover:text-amber-950 duration-300",
-    uList: "flex gap-3 "
+    span:" text-2xl  font-semibold text-amber-800   group-hover:text-amber-950 duration-300 cursor-pointer",
+    uList: "flex gap-3 max-lg:hidden",
+    uListLeft: "flex gap-3"
   }
   return (
     <nav className={className.nav}>
@@ -28,11 +29,9 @@ const Navbar = () => {
             <span className={className.span}>Home</span>
           </a>
         </li>
-        <li>
-          <a href="./" className={className.navLink}>
-            <span className={className.span}>Categories</span>
-          </a>
-          <div className=' absolute z-50'>
+        <li className=' group cursor-pointer duration-500'>
+          <span className={className.span}>Categories</span>
+          <div className=' absolute z-50 group-hover:block hidden duration-300'>
             <CategoriesForm/>
           </div>
         </li>
@@ -48,7 +47,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div>
-        <ul className={className.uList}>
+        <ul className={className.uListLeft}>
          <li>
             <div>
               <Search/>

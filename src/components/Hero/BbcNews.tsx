@@ -53,14 +53,14 @@ const BbcNews = () => {
             adipisicing elit. Vero temporibus repudiandae
             inventore pariatur numquam cumque possimus
           </p>
-          <div className=' absolute z-40 flex mt-7'>
+          <a href='./' className=' absolute z-40 flex mt-7'>
             <img src={bbcLogo} alt=" bbc logo" className=' h-16' />
             <div className=' flex flex-col mt-2 '>
               <span className=' text-white '>BBC NEWS</span>
               {/* <span className='  text-gray-300'><p>{currentDateTime}</p></span> */}
               <p className='  text-gray-300'>Posted <TimeAgo date={someDate} />.</p>
             </div>
-          </div>
+          </a>
         </div>
       </NavLink>
     </div>
