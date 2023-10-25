@@ -1,6 +1,7 @@
 import React from 'react'
+import logo1 from '../assets/img/png/logo-no-background.png'
+import {BsFacebook,BsInstagram,BsSearch} from 'react-icons/bs'
 import logo1 from '../assets/img/png/logo-no-background.png';
-import {BsFacebook,BsInstagram,BsSearch, BsLinkedin} from 'react-icons/bs';
 const Navbar = () => {
   return (
     <div>
@@ -29,4 +30,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default Navbar

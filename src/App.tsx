@@ -6,12 +6,12 @@ import Header from './components/Header';
 
 const App = () => {
   return (
-    <div>
+    <section className='bg-gray-100'>
       <Navbar/>
       <Topnews/>
       <Footer/>
       <Header/>
-    </div>
+    </section>
   )
 }
 
