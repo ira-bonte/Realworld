@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 // images
 import bbcNewsSliderOne from '../../assets/img/news/bbcNews-1.jpg'
 import IgiheLogo from '../../assets/img/logo/igihe-logo copy.png'
-import bbcLogo from '../../assets/img/logo/bbc-logo.png'
 import { formatDistanceToNow } from 'date-fns';
 //time ago
 function TimeAgo({ date }) {

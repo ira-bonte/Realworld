@@ -4,6 +4,7 @@ import {BsFacebook,BsTwitter,BsInstagram,BsSearch} from 'react-icons/bs';
 import { FaHome, FaMicrophone } from "react-icons/fa"
 import Search from './navBar/Search';
 import { NavLink } from 'react-router-dom';
+import CategoriesForm from './navBar/CategoriesForm';
 const Navbar = () => {
   const className= {
     nav: " h-16 z-50 fixed p-2 shadow-md shadow-orange-900 w-full  flex justify-between bg-white",
@@ -31,6 +32,9 @@ const Navbar = () => {
           <a href="./" className={className.navLink}>
             <span className={className.span}>Categories</span>
           </a>
+          <div className=' absolute z-50'>
+            <CategoriesForm/>
+          </div>
         </li>
         <li>
           <a href="./" className={className.navLink}>
