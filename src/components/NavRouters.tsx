@@ -3,8 +3,8 @@ import { BrowserRouter as Router , Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import Navbar from './Navbar'
 import Footer from './footer'
-import Culture from './news/Culture'
-import Food from './news/Food'
+import Culture from '../assets/news/Culture'
+import Food from '../assets/news/Food'
 const NavRouters = () => {
   return (
     <Router>

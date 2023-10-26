@@ -1,14 +1,15 @@
 import React from 'react'
-import Igihe2 from '../../assets/img/news/pexels-алесь-усцінаў-11518767.jpg'
+//import Igihe2 from '../../assets/img/news/pexels-алесь-усцінаў-11518767.jpg'
 import Igihe1 from '../../assets/img/news/pexels-алесь-усцінаў-11477799.jpg'
 import bbcNews from '../../assets/img/news/bbcNews-1.jpg'
+import Iphone81 from '../../news/iphone81.png'
 const HomeDiv2 = () => {
   return (
    <div>
     {/* 1st img */}
     <div className=' mt-4'>
         <div>
-        <img src={Igihe2} alt="img2" className=' h-52 w-56' />
+        <img src={Iphone81} alt="iphone" className=' h-52 w-56' />
         </div>
         <div className=' mt-3'>
             <small>SPORT • JUL 5TH '22</small>

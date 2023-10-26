@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from './Hero'
-import Topnews from './news/topnews'
+import Topnews from '../assets/news/topnews'
 import HomeDiv2 from './home/HomeDiv2'
 import HomeDiv3 from './home/HomeDiv3'
 import HomeDiv1 from './home/HomeDiv1'
