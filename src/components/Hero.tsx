@@ -10,6 +10,7 @@ import Videos from './Hero/Videos'
 // icons
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import Popular from './Hero/Popular'
+import MessVideo from './Hero/MessVideo'
 // start
 const Hero = () => {
     const sliderRef = useRef(null);
@@ -46,6 +47,9 @@ const Hero = () => {
           </div>
           <div>
             <IgiheSirider/>
+          </div>
+          <div>
+            <MessVideo/>
           </div>
         </Slider>
         <div className=' flex w-[990px] justify-between absolute z-40 px-2 -mt-64'>
