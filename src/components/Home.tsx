@@ -1,4 +1,6 @@
+
 import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from './Hero'
 import Topnews from './news/topnews'
 import HomeDiv2 from './home/HomeDiv2'
@@ -16,6 +18,25 @@ const Home = () => {
       <Mixture/>
       {/* <HomeDiv2/> */}
       {/* <HomeDiv3/> */}
+const Home = () => {
+  useEffect(() => {
+    document.title ="Real World"
+  })
+  return (
+    <section className=' flex flex-col gap-2'>
+      <Hero/>
+      <div className=' flex gap-1 mt-4'>
+        <div className=' max-lg:hidden'>
+          <HomeDiv1/>
+        </div>
+        <div>
+          <HomeDiv2/>
+        </div>
+        <div>
+          <HomeDiv3/>
+        </div>
+      </div>
+      {/* <Topnews/>  */}
     </section>
   )
 }

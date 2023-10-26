@@ -1,15 +1,10 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Topnews from './components/news/topnews'
-import Footer from './components/footer'
-
+import NavRouters from './components/NavRouters'
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Topnews/>
-      <Footer/>
-    </div>
+    <section className=' bg-gray-100'>
+      <NavRouters/>
+    </section>
   )
 }
 
