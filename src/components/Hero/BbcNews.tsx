@@ -18,18 +18,25 @@ function TimeAgo({ date }) {
     return () => clearInterval(intervalId); // Cleanup on unmount
   }, [date]);
 
+
     // return <span>{relativeTime} ago</span>;
+
+  return <span>{relativeTime} ago</span>;
+
 }
 
-////////////////////////////////
+
 const BbcNews = () => {
-  /////
+  
   const someDate = new Date('2023-10-25T15:00:00Z'); // Replace with your date
+
+  const someDate = new Date('2023-10-24T15:00:00Z'); // Replace with your date
+
 
   // const [currentDateTime, setCurrentDateTime] = useState('');
 
   // useEffect(() => {
-  //   // Set up a timer to update the date and time every second
+  //
   //   const intervalId = setInterval(() => {
   //     const now = moment(); // Create a moment object representing the current date and time
   //     setCurrentDateTime(now.format('YYYY-MM-DD HH:mm:ss')); // Format the date and time as desired
