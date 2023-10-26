@@ -1,6 +1,7 @@
 import React from 'react'
 // icons 
 import { FaChevronRight } from 'react-icons/fa'
+import { NavLink } from 'react-router-dom'
 const CategoriesForm = () => {
     const className= {
         div: "flex flex-col gap-3 bg-white shadow-lg shadow-amber-950 px-2 py-3 rounded-md duration-500 ",
@@ -18,10 +19,10 @@ const CategoriesForm = () => {
         <div className={className.UDiv}>
             <ul className= {className.UList}>
                 <li>
-                    <a href="./" className={className.links}>
+                    <NavLink to="/sport" className={className.links}>
                         <FaChevronRight className={className.ChevronIcon}/>
                         <span className={className.span}>Sport</span>
-                    </a>
+                    </NavLink>
                 </li>
                 <li >
                     <a href="./" className={className.links}>

@@ -7,6 +7,7 @@ import Culture from './news/Culture'
 import Food from './news/Food'
 import LatestGaza from './news/LatestGaza'
 import MessVideoNews from './news/MessVideoNews'
+import Mixture from './sports/Mixture'
 const NavRouters = () => {
   return (
     <Router>
@@ -17,6 +18,7 @@ const NavRouters = () => {
             <Route path='/food' element={<Food/>}/>
             <Route path='/LatestGaza' element={<LatestGaza/>}/>
             <Route path='/messVideos' element={<MessVideoNews/>}/>
+            <Route path='/sport' element={<Mixture/>}/>
         </Routes>
         <Footer/>
     </Router>

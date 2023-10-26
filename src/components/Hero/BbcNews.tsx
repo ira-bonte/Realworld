@@ -29,8 +29,7 @@ function TimeAgo({ date }) {
 const BbcNews = () => {
   
   const someDate = new Date('2023-10-25T15:00:00Z'); // Replace with your date
-
-  const someDate = new Date('2023-10-24T15:00:00Z'); // Replace with your date
+// Replace with your date
 
 
   // const [currentDateTime, setCurrentDateTime] = useState('');

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import logo1 from '../assets/img/png/logo-no-background.png';
+// import logo from '../assets/img/png/logo-no-background.png';
+import logo from '../assets/img/png/logo.png'
 import {BsFacebook,BsTwitter,BsInstagram,BsSearch, BsX} from 'react-icons/bs';
 import { FaChevronDown, FaChevronRight, FaHome, FaList, FaMicrophone } from "react-icons/fa"
 import Search from './navBar/Search';
@@ -26,7 +27,7 @@ const Navbar = () => {
       {/* logo */}
       <div>
         <NavLink to="/">
-          <img src={logo1} alt=" Real word Logo" className=' h-12' />
+          <img src={logo} alt=" Real word Logo" className=' h-12' />
         </NavLink>
       </div>
       {/* list */}
