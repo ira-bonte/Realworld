@@ -1,106 +1,92 @@
-import React from 'react'
-import logo1 from '../assets/img/png/logo-no-background.png';
-import {BsFacebook,BsTwitter,BsInstagram,BsSearch} from 'react-icons/bs';
-import { FaHome, FaMicrophone } from "react-icons/fa"
-import Search from './navBar/Search';
-const Navbar = () => {
-  return(
-    // const className= {
-      //   nav: " h-16 z-50 fixed p-2 shadow-md shadow-orange-900 w-full  flex justify-between bg-white",
-      //   navIcons : " text-3xl text-amber-950  cursor-pointer group-hover:text-amber-950 duration-500 hover:scale-105 hover:text-amber-600",
-      //   navLink: " flex gap-2 group  hover:border-amber-950",
-      //   span:" text-2xl  font-semibold text-amber-800   group-hover:text-amber-950 duration-300",
-      //   uList: "flex gap-3 "
-      // }
-      <section>
-    <nav className={className.nav}>
-    {/* logo */}
-    <div>
-      <a href="./">
-        <img src={logo1} alt=" Real word Logo" className=' h-12' />
-      </a>
-    </div>
-    {/* list */}
-    <ul className={className.uList}>
-      <li>
-        <a href="./" className={className.navLink}>
-          <span className={className.span}>Home</span>
-        </a>
-      </li>
-      <li>
-        <a href="./" className={className.navLink}>
-          <span className={className.span}>Categories</span>
-        </a>
-      </li>
-      <li>
-        <a href="./" className={className.navLink}>
-          <span className={className.span}>Top News</span>
-        </a>
-      </li>
-      <li>
-        <a href="./" className={className.navLink}>
-          <span className={className.span}>Popular News</span>
-        </a>
-      </li>
-    </ul>
-    <div>
-      <ul className={className.uList}>
-       <li>
-          <div>
-            <Search/>
-          </div>
-       </li>
-        <li>
-          <a href="./">
-            <BsFacebook className={className.navIcons}/>
-          </a>
-        </li>
-        <li>
-          <a href="./">
-            <BsInstagram className={className.navIcons}/>
-          </a>
-        </li>
-        <li>
-          <a href="./">
-            <BsTwitter className={className.navIcons}/>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div className=' text-red-600'>
-  </div>
-  </section>
-  )
-  // const className= {
-  //   nav: " h-16 z-50 fixed p-2 shadow-md shadow-orange-900 w-full  flex justify-between bg-white",
-  //   navIcons : " text-3xl text-amber-950  cursor-pointer group-hover:text-amber-950 duration-500 hover:scale-105 hover:text-amber-600",
-  //   navLink: " flex gap-2 group  hover:border-amber-950",
-  //   span:" text-2xl  font-semibold text-amber-800   group-hover:text-amber-950 duration-300",
-  //   uList: "flex gap-3 "
-  // }
+import React, { useRef, useState } from 'react';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+import IgiheSirider from './Hero/IgiheSirider';
+import BbcNews from './Hero/BbcNews';
+import Trending from './Hero/Trending';
+import Videos from './Hero/Videos';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Popular from './Hero/Popular';
 
-  // return (
+const Hero = () => {
+  const sliderRef = useRef(null);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false, // Disable default arrows
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 9000,
+  };
 
-  //   <div>
-  //   <nav className='flex gap-48 bg-gray-50 text-black h-24 w-full fixed z-10 p-2'>
-  //     <a href=''>
-  //         <img src={logo1} alt="" className='h-20 w-56 '/>
-  //         </a>
-  //         <div className=''></div>
-  //       <ul className='flex gap-16 p-3 text-black text-xl '>
-  //         <li><a href='#'>Blog</a></li>
-  //         <li><a href='#'>Categories</a></li>
-  //         <li><a href='#'>Contact</a></li>
-  //         </ul>
-  //         {/* media */}
-  //       <div className='flex gap-8 p-3 text-2xl '>
-  //         <a href='https://www.facebook.com'target='blank'><BsFacebook/></a>
-  //         <a href='https://www.linkedin.com' target='blank'><BsLinkedin/></a>
-  //         <a href='https://www.instagram.com' target='blank'><BsInstagram/></a>
-  //         <a href=''><BsSearch/></a>
-  //       </div>
+  // Go to the previous slide
+  const goToPrevSlide = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  // Go to the next slide
+  const goToNextSlide = () => {
+    sliderRef.current.slickNext();
+  };
+
+  // trending news slide
+  const [change, setChange] = useState('Popular');
   
-}
+  return (
+    <section className="relative pt-20 px-2 flex">
+      <div className="h-[450px] w-[990px]">
+        <Slider ref={sliderRef} {...settings}>
+          <div>
+            <BbcNews />
+          </div>
+          <div>
+            <IgiheSirider />
+          </div>
+        </Slider>
+        <div className="flex w-[990px] justify-between absolute z-40 px-2 -mt-64">
+          <button className="text-2xl text-white bg-amber-950 h-8 w-8 text-center rounded-full cursor-pointer hover:scale-110 duration-300 hover:bg-amber-500" onClick={goToPrevSlide}>
+            <FaChevronLeft />
+          </button>
+          <button className="text-2xl text-white bg-amber-950 h-8 w-8 text-center rounded-full cursor-pointer hover:scale-110 duration-300 hover:bg-amber-500" onClick={goToNextSlide}>
+            <FaChevronRight />
+          </button>
+        </div>
+      </div>
+      {/* other news */}
+      <div className="px-2 max-lg:hidden">
+        {/* categories of Popular*/}
+        <div className="flex gap-4">
+          {/* popular */}
+          <button
+            className={`font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 ${change === 'Popular' ? 'border-amber-600' : ''}`}
+            onClick={() => setChange('Popular')}
+          >
+            Popular
+          </button>
+          {/* trending */}
+          <button
+            className={`font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 ${change === 'Trending' ? 'border-amber-600' : ''}`}
+            onClick={() => setChange('Trending')}
+          >
+            Trending
+          </button>
+          <button
+            className={`font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 ${change === 'Videos' ? 'border-amber-600' : ''} text-2xl`}
+            onClick={() => setChange('Videos')}
+          >
+            Videos
+          </button>
+        </div>
+        {/* where it is shown */}
+        {change === 'Popular' && <Popular />}
+        {change === 'Trending' && <Trending />}
+        {change === 'Videos' && <Videos />}
+      </div>
+    </section>
+  );
+};
 
-export default Navbar
+export default Hero;

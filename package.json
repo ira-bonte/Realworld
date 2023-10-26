@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "date-fns": "^2.30.0",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.17.0",
     "react-slick": "^0.29.0",
     "react-slider": "^2.0.6",
+    "react-youtube": "^10.1.0",
     "router-dom": "^2.2.11",
     "slice-ansi": "^6.0.0",
     "slick-carousel": "^1.8.1",
@@ -25,6 +28,7 @@
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/react-slick": "^0.23.11",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",

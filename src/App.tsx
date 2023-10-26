@@ -4,6 +4,7 @@ import Topnews from './components/news/topnews'
 import Footer from './components/footer'
 import Header from './components/Header';
 import Hero from './components/Hero';
+import NavRouters from './components/NavRouters'
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       <Topnews/>
       <Footer/>
       <Header/>
-    </section>
+      <NavRouters/>
+      </section>
   )
 }
 

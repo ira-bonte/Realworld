@@ -1,6 +1,8 @@
 import React from 'react'
 import {BsFacebook,BsInstagram,BsSearch, BsLinkedin} from 'react-icons/bs'
-import {FaChevronRight} from 'react-icons/Fa'
+import {FaChevronRight} from 'react-icons/fa'
+import { NavLink } from 'react-router-dom'
+
 const footer = () => {
   return (
         <div className=' bg-zinc-900 h-96 w-full text-white p-11 flex gap-40'>
@@ -42,6 +44,7 @@ const footer = () => {
               <h1>Navigation</h1>
               <div className=' opacity-70 mt-3 p-2'>
                 <ul>
+               <li className=' flex hover:text-gray-950'><FaChevronRight/><NavLink to="Food">Home</NavLink></li> 
                <li className=' flex hover:text-gray-950'><FaChevronRight/><a href="#">Blog</a></li> 
                <li className=' flex hover:text-gray-950'><FaChevronRight/><a href="#"> Categories</a></li> 
                 <li className=' flex hover:text-gray-950'><FaChevronRight/><a href="#"> Contact</a></li>
@@ -55,6 +58,7 @@ const footer = () => {
             </div>
             <div className='flex gap-8'>
             <a href="https://www.facebook.com" target='blank'>
+            <a href="#">
             <BsFacebook/>
           </a>
           <a href="https://www.linkedin.com" target='blank'>
@@ -74,4 +78,4 @@ const footer = () => {
 }
 
 
-export default footer;
+export default footer
