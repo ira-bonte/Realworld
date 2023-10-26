@@ -6,6 +6,7 @@ import Footer from './footer'
 import Culture from './news/Culture'
 import Food from './news/Food'
 import LatestGaza from './news/LatestGaza'
+import MessVideoNews from './news/MessVideoNews'
 const NavRouters = () => {
   return (
     <Router>
@@ -15,6 +16,7 @@ const NavRouters = () => {
             <Route path='/culture' element={<Culture/>}/>
             <Route path='/food' element={<Food/>}/>
             <Route path='/LatestGaza' element={<LatestGaza/>}/>
+            <Route path='/messVideos' element={<MessVideoNews/>}/>
         </Routes>
         <Footer/>
     </Router>

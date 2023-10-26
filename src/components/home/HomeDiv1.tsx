@@ -41,10 +41,13 @@ const HomeDiv1 = () => {
   };
 
   return (
-    <div className="relative w-[410px] h-screen flex-col flex gap-2 rounded-md">
+    <div className=" w-[410px] h-screen flex-col flex gap-2 rounded-md">
       <div className=' flex flex-col gap-1 bg-white  shadow-lg hover:shadow-amber-950 duration-300  px-2 rounded-md'>
         {/* ads */}
-        <span className=' text-amber-900 font-bold font-serif '>Ads</span>
+        <div className=' flex justify-between '>
+          <span className=' text-amber-900 font-bold font-serif '>Ads</span>
+          <span className=' text-xl text-gray-500 duration-300 mr-1 cursor-pointer hover:text-amber-950 font-semibold'>...</span>
+        </div>
         <div
           onClick={toggleVideo}
           className={`cursor-pointer transition-opacity duration-300 ${isVideoOpen ? 'opacity-0' : 'opacity-100'}`}
