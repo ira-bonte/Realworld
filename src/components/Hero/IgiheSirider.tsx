@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 // import moment from 'moment'; // Import the date/time library
 // images
 import bbcNewsSliderOne from '../../assets/img/news/bbcNews-1.jpg'
 import IgiheLogo from '../../assets/img/logo/igihe-logo copy.png'
+import CogoByadogereye from '../../assets/img/news/igihe-1 copy.jpg'
 import { formatDistanceToNow } from 'date-fns';
 //time ago
 function TimeAgo({ date }) {
@@ -25,7 +26,7 @@ const BbcNews = () => {
   return (
     <div>
       <a href="./" className=' h-[450px] w-[990px]'>
-        <img src={bbcNewsSliderOne} alt="Ukraine hoes " className=' h-[450px] w-[990px] object-cover rounded-md relative group' />
+        <img src={CogoByadogereye} alt="m23 " className=' h-[450px] w-[990px] object-cover rounded-md relative group' />
         <div className=' h-[450px] w-[990px] dark-background rounded-md -mt-[450px] absolute z-10 '></div>
         <div className=' -mt-56 absolute z-20 p-2'>
           <h1 className=' text-4xl text-red-500 font-bold'>

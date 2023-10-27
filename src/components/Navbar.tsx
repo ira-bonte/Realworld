@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 // import logo from '../assets/img/png/logo-no-background.png';
 import logo from '../assets/img/png/logo.png'
-import {BsFacebook,BsTwitter,BsInstagram,BsSearch, BsX} from 'react-icons/bs';
-import { FaChevronDown, FaChevronRight, FaHome, FaList, FaMicrophone } from "react-icons/fa"
+import {BsFacebook,BsTwitter,BsInstagram, BsX} from 'react-icons/bs';
+import { FaChevronDown, FaHome, FaList, } from "react-icons/fa"
 import Search from './navBar/Search';
 import { NavLink, useMatch } from 'react-router-dom';
 import CategoriesForm from './navBar/CategoriesForm';
@@ -32,9 +32,9 @@ const Navbar = () => {
       </div>
       {/* list */}
       <ul className={className.uList}>
-        <li className={``}>
+        <li>
           <NavLink to='/' className={`flex gap-2 group  hover:border-amber-950 hover:border-b-2 duration-300  ${homeIsActive ? " text-amber-950 border-b-2 border-amber-950" : ""}  text-2xl  font-semibold text-amber-800   group-hover:text-amber-950 duration-300 cursor-pointer`}>
-            <span className={``}>Home</span>
+            <span>Home</span>
           </NavLink>
         </li>
         <li className=' group cursor-pointer duration-500'>

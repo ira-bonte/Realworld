@@ -1,4 +1,3 @@
-import React from 'react'
 import { useEffect } from 'react'
 import Hero from './Hero'
 import HomeDiv2 from './home/HomeDiv2'

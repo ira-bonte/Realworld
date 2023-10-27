@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { formatDistanceToNow, set } from 'date-fns';
+import  { useEffect, useState } from 'react'
+import { formatDistanceToNow } from 'date-fns';
 // icons
 import { BsHeart, BsHeartFill, BsInstagram } from 'react-icons/bs'
-import { FaHeart, FaRegComment, FaShareAlt } from 'react-icons/fa'
+import {  FaRegComment, FaShareAlt } from 'react-icons/fa'
 // images
-import bruceMerodeOne from '../../assets/img/news/brucemelodie-1.jpeg'
 import igiheLogo from '../../assets/img/logo/igihe-logo copy.png'
 import messiOne from '../../assets/img/sport/messi-1.jpg'
 import mbapeOne from '../../assets/img/sport/mbape-1.jpg'
@@ -54,13 +53,13 @@ const HomeDiv3 = () => {
                         {likeInstagram ? <BsHeartFill className="text-red-500 "/>: <BsHeart/>}
                     </button>
                     <span className=' text-gray-500'>
-                        4325k
+                        425k
                     </span>
                 </div>
                 <div className=' flex '>
                   <button className=' text-xl hover:text-red-500 text-gray-500 font-semibold flex gap-1'>
                     <FaRegComment/>
-                        <span className=' text-gray-500 text-sm '>697k</span>
+                        <span className=' text-gray-500 text-sm '>97k</span>
                     </button>  
                 </div>
                 
@@ -77,7 +76,7 @@ const HomeDiv3 = () => {
                     <img src={igiheLogo} alt="igihe logo" className=' h-10 rounded-md' />
                 </div>
             </div>
-            <h3 className=' mt-5 text-10 font-serif text-gray-500 group-hover:text-red-500 duration-300 font-semibold font-serif'>
+            <h3 className=' mt-5 text-10 text-gray-500 group-hover:text-red-500 duration-300 font-semibold font-serif'>
                 imyaka itatu mu gikoni icyumvirizo ku 
                 bihangange 5 bishobora kuza kuri alubumu 
                 nshya Devido
@@ -95,7 +94,7 @@ const HomeDiv3 = () => {
                     <img src={igiheLogo} alt="igihe logo" className=' h-10 rounded-md' />
                 </div>
             </div>
-            <h3 className=' mt-5 text-10 font-serif text-gray-500 group-hover:text-red-500 duration-300 font-semibold font-serif'>
+            <h3 className=' mt-5 text-10 text-gray-500 group-hover:text-red-500 duration-300 font-semibold font-serif'>
                 imyaka itatu mu gikoni icyumvirizo ku 
                 bihangange 5 bishobora kuza kuri alubumu 
                 nshya Devido

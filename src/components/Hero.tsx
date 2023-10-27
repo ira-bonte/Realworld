@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,6 +10,7 @@ import BbcNews from './Hero/BbcNews';
 import Trending from './Hero/Trending';
 import Videos from './Hero/Videos';
 import Popular from './Hero/Popular';
+import MessVideo from './Hero/MessVideo';
 
 const Hero = () => {
   const sliderRef = useRef(null);
@@ -62,8 +63,7 @@ const Hero = () => {
             <IgiheSirider />
           </div>
           <div>
-            {/* You may replace this with your 'MessVideo' component */}
-            <div>MessVideo Component</div>
+           <MessVideo/>
           </div>
         </Slider>
         <div className="flex w-[990px] justify-between absolute z-40 px-2 -mt-64">
@@ -90,7 +90,7 @@ const Hero = () => {
             Trending
           </button>
           <button
-            className="font-medium text-base hover:text-amber-500 duration-300 hover:border-b-2 border-amber-600 text-2xl"
+            className="font-medium hover:text-amber-500 duration-300 hover:border-b-2 border-amber-600 text-2xl"
             onClick={() => toggleChange('Videos')}
           >
             Videos

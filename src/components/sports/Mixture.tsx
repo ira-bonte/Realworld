@@ -1,4 +1,3 @@
-import React from 'react'
 import LiverpoolMatch from '../../assets/video/yt5s.io-Hamas practiced in plain sight, posting video of mock attack weeks before border breach-(1080p).mp4'
 import Image1 from '../../assets/img/news/bbcNews-1.jpg'
 const Mixture = () => {

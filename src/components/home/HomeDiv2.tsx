@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { formatDistanceToNow } from 'date-fns';
-// images
-import Igihe2 from '../../assets/img/news/pexels-алесь-усцінаў-11518767.jpg'
-import Igihe1 from '../../assets/img/news/pexels-алесь-усцінаў-11477799.jpg'
+// image
 import davidoOne from '../../assets/img/news/davido-1.jpeg'
 import addsOne from '../../assets/video/adds/adds-1.mp4'
-import bbcNews from '../../assets/img/news/bbcNews-1.jpg'
 import bruceMerodeOne from '../../assets/img/news/brucemelodie-1.jpeg'
 import igiheLogo from '../../assets/img/logo/igihe-logo copy.png'
 // time sport 
@@ -46,7 +43,7 @@ const HomeDiv2 = () => {
                     <img src={igiheLogo} alt="igihe logo" className=' h-10 rounded-md' />
                 </div>
             </div>
-            <h3 className=' mt-5 text-10 font-serif text-gray-500 group-hover:text-red-500 duration-300 font-semibold font-serif'>
+            <h3 className=' mt-5 text-10 text-gray-500 group-hover:text-red-500 duration-300 font-semibold font-serif'>
                 imyaka itatu mu gikoni icyumvirizo ku 
                 bihangange 5 bishobora kuza kuri alubumu 
                 nshya Devido
@@ -64,7 +61,7 @@ const HomeDiv2 = () => {
                     <img src={igiheLogo} alt="igihe logo" className=' h-10 rounded-md' />
                 </div>
             </div>
-            <h3 className=' mt-5 text-10 font-serif text-gray-500 group-hover:text-red-500 duration-300 font-semibold font-serif'>
+            <h3 className=' mt-5 text-10 text-gray-500 group-hover:text-red-500 duration-300 font-semibold font-serif'>
                 imyaka itatu mu gikoni icyumvirizo ku 
                 bihangange 5 bishobora kuza kuri alubumu 
                 nshya Devido

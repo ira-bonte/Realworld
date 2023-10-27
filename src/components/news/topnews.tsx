@@ -1,4 +1,3 @@
-import React from 'react';
 import Image1 from '../../assets/img/news/firefighters.jpg';
 import Igihe1 from '../../assets/img/news/bomb.jpg';
 import bbcNews from '../../assets/img/news/pexels-алесь-усцінаў-11477799.jpg';
@@ -7,7 +6,6 @@ import Image2 from '../../assets/img/news/tornado.jpg';
 import Image3 from '../../assets/img/news/soldiers.jpg';
 import pic from '../../assets/img/png/logo-white.png';
 import image from '../../assets/img/news/Car accident.jpg';
-import Igihe3 from '../../assets/img/news/pexels-алесь-усцінаў-11678923.jpg';
 import { NavLink } from 'react-router-dom';
 
 const Topnews = () => {
