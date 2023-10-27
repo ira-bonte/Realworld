@@ -1,12 +1,11 @@
 import { BrowserRouter as Router , Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import Navbar from './Navbar'
-import Footer from './Footer'
+import Footer from './footer'
 import Culture from './news/Culture'
 import Food from './news/Food'
 import LatestGaza from './news/LatestGaza'
 import MessVideoNews from './news/MessVideoNews'
-import Mixture from './sports/Mixture'
 const NavRouters = () => {
   return (
     <Router>

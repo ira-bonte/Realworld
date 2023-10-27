@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+
+import React, { useEffect, useState } from 'react'
 import { formatDistanceToNow } from 'date-fns';
 // image
 import davidoOne from '../../assets/img/news/davido-1.jpeg'
@@ -34,6 +35,7 @@ const HomeDiv2 = () => {
             <p className=' text-gray-500 group-hover:text-red-500 font-semibold duration-300 cursor-pointer'>
                 Kenny K-Shot, Nikita Heaven - Lowkey Lyrics Visuals
             </p>
+
         </div>
        {/* davido */}
        <div className=' bg-white p-2 mt-2 rounded-md shadow-lg hover:shadow-amber-950 duration-300 group cursor-pointer'>
